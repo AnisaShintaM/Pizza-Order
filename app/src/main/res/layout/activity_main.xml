@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OUR PIZZA"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:text="Make Your Day More Delicious"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:fontFamily="casual" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:hint="Input Your Name" />
+
+
+            <ImageButton
+                android:id="@+id/buttonSilang"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/editTextNama"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:src="@drawable/ic_close_black_24dp" />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/buttonSilang"
+                android:background="@color/colorAccent"
+                android:text="SUBMIT" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OUR MENU"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkboxbasic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Basic Pizza" />
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <RadioGroup
+            android:id="@+id/radiogroupbasic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/radiobuttonsmallbasic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="SMALL" />
+
+            <RadioButton
+                android:id="@+id/radiobuttonmediumbasic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radiobuttonsmallbasic"
+                android:enabled="false"
+                android:text="MEDIUM" />
+
+            <RadioButton
+                android:id="@+id/radiobuttonlargebasic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radiobuttonmediumbasic"
+                android:enabled="false"
+                android:text="LARGE" />
+
+
+        </RadioGroup>
+
+
+        <CheckBox
+            android:id="@+id/checkboxstandar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Standart Pizza" />
+
+        <RadioGroup
+            android:id="@+id/radiogroupstandar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobuttonsmallstandar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="SMALL" />
+
+            <RadioButton
+                android:id="@+id/radiobuttonmediumstandar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radiobuttonsmallstandar"
+                android:enabled="false"
+                android:text="MEDIUM" />
+
+            <RadioButton
+                android:id="@+id/radiobuttonlargestandar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radiobuttonmediumstandar"
+                android:enabled="false"
+                android:text="LARGE" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkboxdouble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Double Pizza" />
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <RadioGroup
+            android:id="@+id/radiogroupdouble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobuttonsmalldouble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="SMALL" />
+
+            <RadioButton
+                android:id="@+id/radiobuttonmediumdouble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radiobuttonsmalldouble"
+                android:enabled="false"
+                android:text="MEDIUM" />
+
+            <RadioButton
+                android:id="@+id/radiobuttonlargedouble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/radiobuttonmediumdouble"
+                android:enabled="false"
+                android:text="LARGE" />
+
+
+        </RadioGroup>
+
+        <!--</RelativeLayout>-->
+
+        <Switch
+            android:id="@+id/switchupsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="UPSIZE" />
+
+        <Button
+            android:id="@+id/buttonorder"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:enabled="false"
+
+            android:text="ORDER" />
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/textViewHasil"-->
+        <!--android:text="ORDERAN" />-->
+
+    </LinearLayout>
+
+</ScrollView>
